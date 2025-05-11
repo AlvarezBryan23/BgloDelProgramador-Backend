@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "682105b9875c6fc3cd25c1a4"
+  },
+  "name": "Bryan",
+  "surname": "Alvarez",
+  "username": "B.ALVAREZ",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$RJKBfZ0zsBLIfQkLuOipEQ$wpUFmiRqOUibAmZjy5JH+Pj8wbFEuEtcLtT6kjQjeLQ",
+  "email": "balvarez-2023244@gmail.com",
+  "profilePicture": "FotoPerfil.png",
+  "role": "USER_ROLE",
+  "status": true
+}]
