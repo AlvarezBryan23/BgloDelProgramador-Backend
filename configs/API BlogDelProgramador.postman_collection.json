@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "a1424b00-2c96-40fc-9351-5144875b0203",
+		"name": "API BlogDelProgramador",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37585469"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Actualizar  Usuario",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Isaac\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3005/blogProgramador/v1/user/updateUser/681ede85b4cc33484e0169a9"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Foto",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/Dell/Pictures/WhatsApp Image 2025-01-23 at 11.07.07 PM.jpeg"
+								}
+							]
+						},
+						"url": "http://localhost:3005/blogProgramador/v1/user/updateProfilePicture/681ef590f33f5631bbd952a4"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Contraseña",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\": \"Bry22an5\",\r\n    \"newPassword\": \"LaVida3sCorta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3005/blogProgramador/v1/user/updatePassword/681d763340a48e4e15f00d93",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"blogProgramador",
+								"v1",
+								"user",
+								"updatePassword",
+								"681d763340a48e4e15f00d93"
+							],
+							"query": [
+								{
+									"key": "oldPassword",
+									"value": "Bry22an$",
+									"disabled": true
+								},
+								{
+									"key": "newPassword",
+									"value": "LaVid22$",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Publicaciones",
+			"item": [
+				{
+					"name": "Crear Publicacion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0MjYzZDI2ZTE3M2NhNWZhMDdlYjkiLCJpYXQiOjE3NDAxMTcxMTgsImV4cCI6MTc0MDEyMDcxOH0.qzehyE3BFdmrVe8js3Qdmi4CIFAj_cSC5ylshq3PdgE"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Word\",\r\n    \"categoria\": \"TICS\",\r\n    \"textoPrincipal\": \"Aprendamos a usar mejor Word\",\r\n    \"username\": \"B.ALVAREZ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3005/blogProgramador/v1/publicaciones/addPublicacion"
+					},
+					"response": []
+				},
+				{
+					"name": "Publicacion Edit",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Tema de un Programador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3005/blogProgramador/v1/publicaciones/updatePublicacion/681fa74d91658736a7e42781"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Publicacion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0MjYzZDI2ZTE3M2NhNWZhMDdlYjkiLCJpYXQiOjE3NDAxMjgwODksImV4cCI6MTc0MDEzMTY4OX0.Ki3VWUM-OKWzNon_TajARdt2frXoW66t2w8_ec1hWBc"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3005/blogProgramador/v1/publicaciones/deletePublicacion/67b83fa49ccd4783b62552ce"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar por categoria",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"listarOrden\": \"tics\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3005/blogProgramador/v1/publicaciones/listarPublicacion"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comentarios",
+			"item": [
+				{
+					"name": "Agregar Comentario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"opiniones\": \"Pensemos para gente mayor que le cuesta trabajar cone esta aplicacion\",\r\n    \"informacion\": \"Las empresas exigen mas de una aplicacion\",\r\n    \"titulo\": \"PowerPoint\",\r\n    \"username\": \"B.ALVAREZ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3005/blogProgramador/v1/comentario/addComentario"
+					},
+					"response": []
+				},
+				{
+					"name": "Editar comentario",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"publicacion\":\"Word\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3005/blogProgramador/v1/comentario/updateComentario/682052c1dd26a8b8f5bcd94c"
+					},
+					"response": []
+				},
+				{
+					"name": "Elimina el comentario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3005/blogProgramador/v1/comentario/deleteComentario/68199b9ff83004be323ffbc9"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Comentario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"entryDate\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3005/blogProgramador/v1/comentario/listarComentarios"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

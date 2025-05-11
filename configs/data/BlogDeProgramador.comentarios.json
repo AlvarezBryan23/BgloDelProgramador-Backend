@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "682107a8c149525363560394"
+  },
+  "opiniones": "Si opino que sea buena, pero hay gente que le cuesta, pero sería mejora enseñarles a nuestros empleados a usar esta herramienta o que tomen un curso.",
+  "informacion": "Esperemos que se hagan esos cursos para todos.",
+  "role": "AUTOR_ROLE",
+  "publicacion": "PowerPoint",
+  "usuario": "B.ALVAREZ",
+  "status": true,
+  "entryDate": {
+    "$date": "2025-05-11T20:25:12.228Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68210831c14952536356039c"
+  },
+  "opiniones": "Si es bueno usar api, más por que algunas se pueden conectar con otras, por ejemplo REACT+VITE, que se conecta con una api ella con JS conectada a MongoDB",
+  "informacion": "Un proyecto bien hecho.",
+  "role": "AUTOR_ROLE",
+  "publicacion": "API",
+  "usuario": "B.ALVAREZ",
+  "status": true,
+  "entryDate": {
+    "$date": "2025-05-11T20:24:29.956Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682108f7c1495253635603a6"
+  },
+  "opiniones": "Opino que HTML es un gran lenguaje pero muy flexible, al no ser tan estricto pueden crear muchas cosas, pero con peligro de ser hackeada.",
+  "informacion": "Si seria bueno usar HTML?",
+  "role": "AUTOR_ROLE",
+  "publicacion": "HTML",
+  "usuario": "B.ALVAREZ",
+  "status": true,
+  "entryDate": {
+    "$date": "2025-05-11T20:30:47.348Z"
+  }
+}]

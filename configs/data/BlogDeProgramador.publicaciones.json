@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "6821063ec14952536356037a"
+  },
+  "titulo": "HTML",
+  "categoria": "TALLER",
+  "textoPrincipal": "Es una lenguaje que nos permite hacer una página web, junto a la herramienta de estilos CSS, que mejora que nuestra página sea más atractiva.",
+  "role": "AUTOR_ROLE",
+  "usuario": "B.ALVAREZ",
+  "status": true,
+  "entryDate": {
+    "$date": "2025-05-11T20:19:10.490Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6821068fc14952536356037d"
+  },
+  "titulo": "API",
+  "categoria": "TECNOLOGIA",
+  "textoPrincipal": "Todos podemos crear apis un ejemplo, que se puede crear con JS desde un cmd. De ahí salen las api, pero de otros lados se pueden crear API.",
+  "role": "AUTOR_ROLE",
+  "usuario": "B.ALVAREZ",
+  "status": true,
+  "entryDate": {
+    "$date": "2025-05-11T20:20:31.856Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68210762c149525363560390"
+  },
+  "titulo": "PowerPoint",
+  "categoria": "TICS",
+  "textoPrincipal": "Si puedes utilizar esta herramienta, mereces tener un buen puesto.",
+  "role": "AUTOR_ROLE",
+  "usuario": "B.ALVAREZ",
+  "status": true,
+  "entryDate": {
+    "$date": "2025-05-11T20:24:02.277Z"
+  }
+}]
