@@ -9,7 +9,7 @@ const publicacionesSchema = Schema({
     categoria: {
         type:String,
         required: true,
-        enum: ["TALLER", "TECNOLOGIA", "TICS"]
+        enum: ["TALLER", "TECNOLOGIA", "PRACTICA SUPERVISADA"]
     },
     textoPrincipal: {
         type: String,

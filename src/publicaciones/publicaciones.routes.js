@@ -77,7 +77,7 @@ router.post("/addPublicacion", createPublicacionValidator, savePublicaciones);
  *       500:
  *         description: Error al listar las publicaciones.
  */
-router.get("/listarPublicacion", getListarPublicacion);
+router.post("/listarPublicacion", getListarPublicacion);
 
 /**
  * @swagger

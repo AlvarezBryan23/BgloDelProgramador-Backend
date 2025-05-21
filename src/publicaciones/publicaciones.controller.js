@@ -83,37 +83,37 @@ export const deletePublicacion = async(req, res) =>{
 }
 
 export const getListarPublicacion = async (req, res) => {
-     try {
-    const { limit = 10, from = 0, listarOrden } = req.query; 
-
-    const query = { status: true };
-
-    const categorias = ['tics', 'tecnologia', 'taller'];
-    if (categorias.includes(listarOrden?.toLowerCase())) {
-      query.categoria = listarOrden.toUpperCase(); 
+    try {
+        const { limit = 10, from = 0, listarOrden } = req.body;
+        const categorias = ['practica supervisada', 'tecnologia', 'taller'];
+   
+        const query = { status: true };
+   
+        if (listarOrden && categorias.includes(listarOrden.toLowerCase())) {
+          query.categoria = listarOrden.toUpperCase();
+        }
+   
+        const ordenOptions = { createdAt: -1 };
+   
+        const [total, publicaciones] = await Promise.all([
+          Publicacion.countDocuments(query),
+          Publicacion.find(query)
+            .sort(ordenOptions)
+            .skip(Number(from))
+            .limit(Number(limit))
+        ]);
+   
+        return res.status(200).json({
+          success: true,
+          total,
+          publicaciones
+        });
+   
+      } catch (err) {
+        return res.status(500).json({
+          success: false,
+          message: "Error al listar las publicaciones",
+          error: err.message
+        });
     }
-
-    const ordenOptions = { createdAt: -1 };
-
-    const [total, publicaciones] = await Promise.all([
-      Publicacion.countDocuments(query),
-      Publicacion.find(query)
-        .sort(ordenOptions)
-        .skip(Number(from))
-        .limit(Number(limit))
-    ]);
-
-    return res.status(200).json({
-      success: true,
-      total,
-      publicaciones
-    });
-
-  } catch (err) {
-    return res.status(500).json({
-      success: false,
-      message: "Error al listar las publicaciones",
-      error: err.message
-    });
-  }
 };

@@ -108,7 +108,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"titulo\": \"Word\",\r\n    \"categoria\": \"TICS\",\r\n    \"textoPrincipal\": \"Aprendamos a usar mejor Word\",\r\n    \"username\": \"B.ALVAREZ\"\r\n}",
+							"raw": "{\r\n    \"titulo\": \"Word\",\r\n    \"categoria\": \"PRACTICA SUPERVISADA\",\r\n    \"textoPrincipal\": \"Aprendamos a usar mejor Word\",\r\n    \"username\": \"B.ALVAREZ\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -163,15 +163,12 @@
 				},
 				{
 					"name": "Listar por categoria",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"listarOrden\": \"tics\"\r\n}",
+							"raw": "{\r\n    \"listarOrden\": \"tecnologia\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

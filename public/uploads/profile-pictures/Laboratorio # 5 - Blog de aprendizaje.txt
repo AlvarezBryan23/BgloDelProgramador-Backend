@@ -1,0 +1,3 @@
+https://github.com/AlvarezBryan23/BgloDelProgramador-Backend.git
+
+https://github.com/AlvarezBryan23/BgloDelProgramador-Fronted.git
